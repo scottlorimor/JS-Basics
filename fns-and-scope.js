@@ -6,6 +6,13 @@ var name = 'Tyler';
 //If the argument you passed in is equal to 'Tyler', return true. If it's not, return false.
 
   //Code Here
+  function isTyler(name) {
+  	name = name.toLowerCase();
+  	if (name === "tyler") {
+  		return true;
+  	}
+  	return false;
+  }
 
 //Next problem
 
@@ -15,6 +22,10 @@ var name = 'Tyler';
 
 
   //Code Here
+  function getName() {
+  	userName = prompt("What is your name?");
+  	return userName;
+  }
 
 
 //Next Problem
@@ -26,6 +37,20 @@ var name = 'Tyler';
 
   //Code Here
 
+  function welcome() {
+  	user = getName();
+  	alert("Welcome, "+user);
+  }
+
+var welcome = function(getName) {
+  	user = getName;
+  	alert("Welcome, "+user);
+  }
+
+  // which is more semantically correct for javaScript? 1 or 2...
+
+
+
 
 //Next problem
 
@@ -36,6 +61,7 @@ var name = 'Tyler';
 
   //Answer Here
 
+params are the placeholders for the arguments to be passed in
 
 //Next problem
 
@@ -45,7 +71,14 @@ var name = 'Tyler';
 
 
   //Answer Here
+  false; 
+  null;
+  0;
+  NaN;
+  '';
+  undefined;
 
+  boolean; 
 
 
 //Next Problem
@@ -55,15 +88,18 @@ var name = 'Tyler';
 //Create a function called myName that returns your name
 
   //Code Here
-  
+  var myName = function () {
+  	return "Scott";
+  }
 
 
 //Now save the function definition of myName into a new variable called newMyName
 
   //Code Here
+  newMyName = myName();
 
 //Now alert the result of invoking newMyName
-
+  alert(newMyName);
 
 
 //Next problem
@@ -74,8 +110,21 @@ var name = 'Tyler';
 
   //Code Here
 
+function outerFn() {
+  var name = function() {
+    return "Scott";
+}
+    return name();
+}
+
+outerFn();
+
 //Now save the result of invoking outerFn into a variable called innerFn.
 
   //Code Here
+  innerFn = outerFn();
+
 
 //Now invoke innerFn.
+	innerFn;
+
