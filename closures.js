@@ -10,11 +10,12 @@ var outer = function(){
 //Invoke outer saving the return value into another variable called 'inner'.
 
   //Code Here
+  inner = outer();
 
 //Once you do that, invoke inner.
 
   //Code Here
-
+  inner();
 
 
 //Next problem
@@ -34,7 +35,8 @@ var callFriend = function(){
 
   //Code Here
 
-
+call = callFriend();
+call("435-215-9248");
 
 //Next Problem
 
@@ -45,6 +47,14 @@ var callFriend = function(){
 */
 
   //Code Here
+  var makeCounter = function() {
+    currCount = 0;
+    function counter() {
+        console.log(currCount+=1);
+    }
+    return counter;
+}
+
   var count = makeCounter();
   count(); // 1
   count(); // 2
@@ -62,7 +72,17 @@ var callFriend = function(){
 */
 
   //Code Here
+  function codeLove() {
+    function codeFriend(firstFn) {
+      var codeEcho = function() {
+        firstFn();
+      }
+      return codeEcho();
+    }
+    return "I love code"
+  }
 
+  // can a passed fn be used in the local scope of an inner function?
 
 
 //Next Problem
