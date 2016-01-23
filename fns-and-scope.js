@@ -61,7 +61,7 @@ var welcome = function(getName) {
 
   //Answer Here
 
-params are the placeholders for the arguments to be passed in
+// params are the placeholders for the arguments to be passed in
 
 //Next problem
 
@@ -71,14 +71,14 @@ params are the placeholders for the arguments to be passed in
 
 
   //Answer Here
-  false; 
-  null;
-  0;
-  NaN;
-  '';
-  undefined;
+  // false; 
+  // null;
+  // 0;
+  // NaN;
+  // '';
+  // undefined;
 
-  boolean; 
+  // boolean; 
 
 
 //Next Problem
